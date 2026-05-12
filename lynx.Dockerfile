@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -10,7 +10,7 @@ RUN apt-get update && \
     add-apt-repository ppa:dotnet/backports && \
     apt-get update && \
     apt-get install -y \
-        dotnet-sdk-9.0
+        dotnet-sdk-10.0
 
 # ------------------------------------------------------------------------------
 
